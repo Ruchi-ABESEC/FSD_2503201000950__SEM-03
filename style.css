@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebebf2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #fce941; /* Light cream tone from original UI */
+    border: 1px solid #c91b1b;
+    padding: 30px;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 160px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    flex: 1;
+    padding: 6px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Align inline layout rows */
+.name-fields, .dob-fields, .mobile-fields {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    align-items: center;
+}
+
+.name-fields input {
+    flex: 1;
+}
+
+.dob-fields select {
+    width: 80px;
+    flex: none !important;
+}
+
+.dob-hint {
+    font-size: 12px;
+    color: #555;
+    margin-left: 5px;
+}
+
+.mobile-fields input[readonly] {
+    width: 45px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    gap: 15px;
+    flex: 1;
+    font-size: 14px;
+}
+
+.checkbox-group label, .radio-group label {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-group textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
