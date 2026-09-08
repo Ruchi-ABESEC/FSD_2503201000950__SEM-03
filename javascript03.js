@@ -1,7 +1,7 @@
 //operations 
 
-let value = 3
-let negvalue = -value
+// let value = 3
+// let negvalue = -value
 // console.log(negvalue) // -3
 
 // console.log(3 + 2) // 5
@@ -209,7 +209,7 @@ let negvalue = -value
 // Mon, 10 Jun 2024 12:34:56 GMT
 
 
-let myCreatedDate = new Date(2023,0,23)
+//let myCreatedDate = new Date(2023,0,23)
 
 
 
