@@ -212,7 +212,87 @@
 //let myCreatedDate = new Date(2023,0,23)
 
 
+//////////////////////////////////////////////aarys in javascript**************************************************************************************************************************************************************************************************************************************************************************
+// arrary in js are resizeable and can hold multiple data types
+// const myarr = [1,2,3,4,5]
+// console.log(myarr) // output: [1, 2, 3, 4, 5] because we are creating an array with 5 elements
+//console.log(myarr[0]) // output: 1 because we are accessing the first element of the array
 
+
+//array methods in js*******************
+
+
+// console.log(myarr.length) // output: 5 because we are getting the length of the array
+//myarr.push(6) // adds an element to the end of the array
+//myarr.push(9) // adds an element to the end of the array
+//myarr.pop() // removes the last element of the array
+
+//myarr.unshift(9) // adds an element to the beginning of the array
+//myarr.shift() // removes the first element of the array
+
+// console.log(myarr.includes(2)); // output: true because we are checking if the array includes the element 2 or not
+
+// const newarr = myarr.slice(1,4) // creates a new array with elements from index 1 to 3
+
+// const newarr = myarr.join() // creates a new string with elements from the array separated by commas
+
+// console.log(newarr); // output: "2,3,4" because we are creating a new string with elements from the array separated by commas
+
+// console.log(myarr); // output: [9, 1, 2, 3, 4, 5] because we are adding an element to the beginning of the array
+
+//*****slice,splice */
+// console.log("A",myarr);
+// const myn1 = myarr.slice(1,4) // creates a new array with elements from index 1 to 3
+// console.log(myn1)
+
+
+// console.log("B",myarr); // output: [9, 1, 2, 3, 4, 5] because we are creating a new array with elements from index 1 to 3
+
+// const myn2 = myarr.splice(1,3) // removes 3 elements from index 1 and returns the removed elements
+// console.log("C",myarr); // output: [9, 4, 5] because we are removing 3 elements from index 1 and returning the removed elements
+// console.log("C",myn2); // output: [2, 3, 4] because we are removing 3 elements from index 1 and returning the removed elements
+
+//***********************************************array part 2  */
+
+// const marvel_hero = ["ironman","spiderman","thor","hulk","captain america"]
+// const dc_heros = ["superman","batman","flash","aquaman","wonder woman"]
+
+// marvel_hero.push(dc_heros) // adds the dc_heros array to the end of the marvel_hero array
+// console.log(marvel_hero) // output: ["ironman", "spiderman", "thor", "hulk", "captain america", Array(5)] because we are adding the dc_heros array to the end of the marvel_hero array       
+
+
+// console.log(marvel_hero[3][1]); //output : u 
+
+// const all_heros = marvel_hero.concat(dc_heros) // creates a new array with elements from both arrays
+// console.log(all_heros) // output: ["ironman", "spiderman", "thor", "hulk", "captain america", "superman", "batman", "flash", "aquaman", "wonder woman"] because we are creating a new array with elements from both arrays
+ 
+//difference between concat and push is that concat 
+// creates a new array with elements from both arrays while push adds 
+// the second array to the end of the first array
+
+// const all_heros = [...marvel_hero,...dc_heros] // creates a new array with elements from both arrays using spread operator
+// console.log(all_heros) // output: ["ironman", "spiderman", "thor", "hulk", "captain america", "superman", "batman", "flash", "aquaman", "wonder woman"] because we are creating a new array with elements from both arrays using spread operator
+
+// const another_array = [1,2,3,4,[5,6,7],8,[9,10,11]]
+// const real_another_array = another_array.flat() // creates a new array with elements from the original array and flattens the nested array
+//  console.log(real_another_array) // output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] because we are creating a new array with elements from the original array and flattening the nested array
+
+// const real_another_array = another_array.flat(Infinity) // creates a new array with elements from the original array and flattens the nested array upto 2 levels
+// console.log(real_another_array) // output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] because we are creating a new array with elements from the original array and flattening the nested array upto 2 levels
+
+
+
+// console.log(Array.isArray("ruchi")) // output: false because we are checking if the string "ruchi" is an array or not
+// console.log(Array.from("ruchi")) // output: ["r", "u", "c", "h", "i"] because we are converting the string "ruchi" into an array
+// console.log(Array.from({name: "ruchi"})) // output: [] because we are converting the object {name: "ruchi"} into an array
+//intersting aBOVE FOR INTERVIEW 
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+let score4 = 400
+
+console.log(Array.of(score1,score2,score3,score4)) // output: [100, 200, 300, 400] because we are creating an array with the given elements 
 
 
 
